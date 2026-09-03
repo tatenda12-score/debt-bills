@@ -10,7 +10,7 @@ class RecordDetailScreen extends StatefulWidget {
   const RecordDetailScreen({Key? key, required this.recordId}) : super(key: key);
 
   @override
-  _RecordDetailScreenState createState() => _RecordDetailScreenState();
+  State<RecordDetailScreen> createState() => _RecordDetailScreenState();
 }
 
 class _RecordDetailScreenState extends State<RecordDetailScreen> {

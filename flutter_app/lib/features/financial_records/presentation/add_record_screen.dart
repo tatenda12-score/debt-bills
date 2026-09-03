@@ -9,7 +9,7 @@ class AddRecordScreen extends StatefulWidget {
   const AddRecordScreen({Key? key}) : super(key: key);
 
   @override
-  _AddRecordScreenState createState() => _AddRecordScreenState();
+  State<AddRecordScreen> createState() => _AddRecordScreenState();
 }
 
 class _AddRecordScreenState extends State<AddRecordScreen> {
@@ -68,7 +68,7 @@ class _AddRecordScreenState extends State<AddRecordScreen> {
                 ),
                 const SizedBox(height: 16),
                 DropdownButtonFormField<Category>(
-                  value: _category,
+                  initialValue: _category,
                   decoration: const InputDecoration(labelText: 'Category', border: OutlineInputBorder()),
                   items: Category.values.map((c) => DropdownMenuItem(value: c, child: Text(c.value))).toList(),
                   onChanged: (val) {

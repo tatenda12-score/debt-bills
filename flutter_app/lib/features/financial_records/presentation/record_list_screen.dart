@@ -10,7 +10,7 @@ class RecordListScreen extends StatefulWidget {
   const RecordListScreen({Key? key, this.initialDirection}) : super(key: key);
 
   @override
-  _RecordListScreenState createState() => _RecordListScreenState();
+  State<RecordListScreen> createState() => _RecordListScreenState();
 }
 
 class _RecordListScreenState extends State<RecordListScreen> {

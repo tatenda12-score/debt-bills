@@ -10,7 +10,7 @@ class ReminderConfigScreen extends StatefulWidget {
   const ReminderConfigScreen({Key? key, required this.recordId}) : super(key: key);
 
   @override
-  _ReminderConfigScreenState createState() => _ReminderConfigScreenState();
+  State<ReminderConfigScreen> createState() => _ReminderConfigScreenState();
 }
 
 class _ReminderConfigScreenState extends State<ReminderConfigScreen> {
@@ -70,7 +70,7 @@ class _ReminderConfigScreenState extends State<ReminderConfigScreen> {
                     Text('Add Reminder', style: Theme.of(context).textTheme.titleLarge),
                     const SizedBox(height: 16),
                     DropdownButtonFormField<int>(
-                      value: _daysBefore,
+                      initialValue: _daysBefore,
                       decoration: const InputDecoration(labelText: 'When to remind', border: OutlineInputBorder()),
                       items: const [
                         DropdownMenuItem(value: 7, child: Text('7 days before')),

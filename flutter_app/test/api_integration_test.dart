@@ -25,7 +25,7 @@ void main() {
     final authProvider = AuthProvider(authService, secureStorage);
 
     final testEmail = 'test_integration_${DateTime.now().millisecondsSinceEpoch}@example.com';
-    final testPassword = 'SecurePassword123!';
+    const testPassword = 'SecurePassword123!';
 
     // 1. Register a new user
     await authProvider.register(testEmail, testPassword, 'Test User');
